@@ -1,0 +1,34 @@
+---
+- name: install formulas
+  community.general.homebrew:
+    name: "{{ item }}"
+    state: present
+  loop: "{{ formulars_present }}"
+
+- name: remove formulas
+  community.general.homebrew:
+    name: "{{ item }}"
+    state: absent
+  loop: "{{ formulars_absent }}"
+
+- name: install casks
+  community.general.homebrew:
+    name: "homebrew/cask/{{ item }}"
+    state: present
+  loop: "{{ casks_present }}"
+
+- name: remove casks
+  community.general.homebrew:
+    name: "homebrew/cask/{{ item }}"
+    state: absent
+  loop: "{{ casks_absent }}"
+
+- name: use ignore-pinned option while upgrading all
+  community.general.homebrew:
+    upgrade_all: true
+    upgrade_options: ignore-pinned
+
+- community.general.homebrew:
+    name: neovim
+    state: present
+    install_options: head

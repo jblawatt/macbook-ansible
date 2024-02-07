@@ -1,0 +1,55 @@
+formulars_present:
+ - tmux
+ - node
+ - python3
+ - pyenv
+ - golang
+ - tmux
+ - kubectl 
+ - kubectx
+ - kubecolor
+ - k9s
+ - nmap
+ - openvpn
+ - fzf
+ - azure-cli
+ - Azure/kubelogin/kubelogin
+ - hidetatz/tap/kubecolor
+ - gnu-sed
+ - exa
+ - neovide
+ - direnv
+ - zoxide
+ - lazygit
+ - pipx
+ - helm
+ - bat
+ - vifm
+ - restic
+ - rclone
+ - fossil
+ - jq
+ - yq
+ - elixir
+ - kind
+ - podman-compose
+ - ripgrep
+ - httpie
+ - ansible
+
+formulars_absent: []
+
+casks_present:
+ - zoom
+ - obsidian
+ - microsoft-teams
+ - spotify
+ - 1password
+ - 1password-cli
+ - bitwarden
+ - alacritty
+ - lulu
+ - slack
+ - easy-move-plus-resize
+
+casks_absent: []
